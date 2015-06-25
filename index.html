@@ -4,14 +4,52 @@
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/united/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css" >
-	<script src="js/calculate.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
+	<script src="js/calculate.js"></script>
+	
   </head>
 
   <body>
-	
-	
-  </body>
+	<div class="row">
+		<div class="col-md-9 centered" role="main">
+			<h3>Contracting Rate Calculator</h3>
+			<div class="bs-example">
 
+	<table class="hours-table table table-hover table-responsive custom-b">
+		<thead>
+	    <tr class="header-blue">
+			<th>Work</th>
+	        <th>Hours</th>
+	        <th>Hourly Rate</th>
+	        <th>$ Total</th>
+	    </tr>
+	</thead>
+	  <tr>
+			<td>Base Rate:</td>
+	      <td class="base-hours"><input type="number" class="hour" id="base-hours" name="hour-01" max="???" min="???" value="" /></td>
+	      <td class="hourly-rate"><input min="0" class="hourly-rate" name="rate-01" value="75" readonly /></td>
+	      <td class="total"><input type="text" class="date-total" name="date-total-0" readonly /></td>
+	  </tr>
+	  <tr>
+			<td>NodeJS</td>
+	      <td class="baseHours"><input type="number" class="hour" max="???" min="???" value="" /></td>
+	      <td class="hourly-rate"><input type="text" class="hourly-rate" value="25" readonly /></td>
+	      <td class="total"><input type="text" class="date-total" readonly /></td>
+	  </tr>
+	  <tr>
+			<td>Photoshop</td>
+	      <td class="hours"><input type="number" class="hour" name="hour-03" max="???" min="???" value="" /></td>
+	      <td class="hourly-rate"><input type="text" class="hourly-rate" name="rate-03" value="10" readonly /></td>
+	      <td class="total"><input type="text" class="date-total" name="date-total-2" readonly/></td>
+	  </tr>
+
+	</table>
+	<a href="#" title="" class="add-row"><strong>Add New Rule</strong></a><br />
+	<div class="gtotal">The Total is: <input type="number" id='final-total' min="???"/></div>
+
+	<button type="button" id='calculate' class="btn btn-success">Calculate</button>
+	
+	</div>	
+  </body>
 </html>
 

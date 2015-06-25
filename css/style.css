@@ -1,0 +1,27 @@
+.bs-example {
+ 	margin-left: 0px;
+    margin-right: 0px;
+    background-color: #FFF;
+    border-width: 1px;
+    border-color: #DDD;
+    border-radius: 4px 4px 0px 0px;
+    box-shadow: none;
+}
+
+.header-blue {
+	background: #34495E;
+}
+.header-blue th{
+	color: #fff;
+}
+.custom-b {
+	border: 1px solid #ccc;
+}
+.centered {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gtotal {
+	float: right;
+}
